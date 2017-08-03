@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>p元素后插入内容</title>
+		<script src="jquery.js" type="text/javascript" charset="utf-8"></script>
+	</head>
+	<body>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$("#but2").click(function(){
+					$("#but1").after("<p>我是最后一个</P>")
+				})
+				$("#but3").click(function(){
+					$("#but1").before("<p>我是最后一个</P>")
+				})
+			})
+		</script>
+		<button id="but3">是</button>
+		<p id="but1">我是最后一个</p>
+		<button id="but2">不是</button>
+	</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>停止</title>
+		<style type="text/css">
+			#gao{
+				background: red;
+				width: 200px;
+				height: 200px;
+			}
+		</style>
+		<script src="jquery.js" ></script>
+	</head>
+	<body>
+		<script>
+			$(document).ready(function(){
+				$("#but1").click(function(){
+					$("#gao").animate({height:"400px"},"slow");
+					$("#gao").animate({width:"400px"},"slow");
+					$("#gao").queue(function(){
+						$(this).css("background","blue");
+						$(this).dequeue();
+					})
+					$("#gao").animate({height:"200px"},"slow");
+					$("#gao").animate({width:"200px"},"slow")
+				})
+				$("#but2").click(function(){
+					$("#gao").clearQueue()
+				})
+			})
+		</script>
+		<div id="gao">
+			
+		</div>
+		<button id="but1">开始</button>
+		<button id="but2">停止</button>
+	</body>
+</html>

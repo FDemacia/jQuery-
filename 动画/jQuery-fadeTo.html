@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>半隐藏</title>
+		<script src="jquery.js"></script>
+	</head>
+	<body>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$("#but1").click(function(){
+					$("p").fadeTo(1000,0.5)
+				});
+			})
+		</script>
+		<p>我在这里</p>
+		<button id="but1">消失</button>
+	</body>
+</html>

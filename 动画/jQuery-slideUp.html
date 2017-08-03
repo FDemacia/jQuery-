@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>显示与隐藏</title>
+		<script src="jquery.js"></script>
+	</head>
+	<body>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$("#but1").click(function(){
+					$("p").fadeOut()
+				});
+				$("#but2").click(function(){
+					$("p").fadeIn()
+				})
+			})
+		</script>
+		<p>我在这里</p>
+		<button id="but1">消失</button>
+		<button id="but2">出现</button>
+	</body>
+</html>

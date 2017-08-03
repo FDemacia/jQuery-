@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>操作元素</title>
+		<script src="../jquery.js" type="text/javascript" charset="utf-8"></script>
+		<style type="text/css">
+			.index{
+				color: red;
+				font-size: 18px;
+			}
+			.bian{
+				color: blue;
+				font-size: 20px;
+			}
+		</style>
+	</head>
+	<body>
+		<script type="text/javascript">
+			$(document).ready(function(){
+				$("#but2").click(function(){
+					$("#but1").addClass("index")
+				})
+				$("#but3").click(function(){
+					$("#but1").addClass("bian")
+				})
+			})
+		</script>
+		<p id="but1">我要变颜色</p>
+		<button id="but2">变</button>
+		<button id="but3">在变</button>
+	</body>
+</html>

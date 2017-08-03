@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>改变高度</title>
+		<style type="text/css">
+			#gao{
+				background: red;
+				width: 200px;
+				height: 200px;
+			}
+		</style>
+		<script src="jquery.js" ></script>
+	</head>
+	<body>
+		<script>
+			$(document).ready(function(){
+				$("#but1").click(function(){
+					$("#gao").animate({height:"400px"})
+				})
+				$("#but2").click(function(){
+					$("#gao").animate({height:"100px"})
+				})
+			})
+		</script>
+		<div id="gao">
+			
+		</div>
+		<button id="but1">变大</button>
+		<button id="but2">变小</button>
+	</body>
+</html>
